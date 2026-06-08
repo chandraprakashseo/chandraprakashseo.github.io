@@ -1,178 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chandra Prakash Sharma | SEO GEO AIO Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandra Prakash Sharma | SEO Professional</title>
+
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
-    body{background:#f7f9ff;color:#111827}
-    header{display:flex;justify-content:space-between;align-items:center;padding:22px 8%;background:white;box-shadow:0 5px 20px #0001;position:sticky;top:0;z-index:10}
-    .logo{font-size:22px;font-weight:800;color:#2563eb}
-    nav a{margin:0 14px;text-decoration:none;color:#111827;font-weight:600}
-    .btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:80px 8%}
-    .tag{display:inline-block;background:#e0edff;color:#2563eb;padding:8px 14px;border-radius:20px;font-weight:700;margin-bottom:18px}
-    h1{font-size:54px;line-height:1.1;margin-bottom:18px}
-    h1 span{color:#2563eb}
-    .hero p{font-size:18px;line-height:1.7;color:#4b5563;margin-bottom:28px}
-    .buttons{display:flex;gap:16px}
-    .outline{border:2px solid #2563eb;color:#2563eb;padding:11px 22px;border-radius:30px;text-decoration:none;font-weight:700}
-    .dashboard{background:white;border-radius:30px;padding:30px;box-shadow:0 20px 50px #2563eb22}
-    .card{background:linear-gradient(135deg,#eef4ff,#ffffff);padding:22px;border-radius:20px;margin-bottom:18px;border:1px solid #dbeafe}
-    .card h3{color:#2563eb;margin-bottom:8px}
-    section{padding:60px 8%}
-    .title{text-align:center;margin-bottom:40px}
-    .title h2{font-size:36px;margin-bottom:10px}
-    .title p{color:#6b7280}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-    .box{background:white;padding:28px;border-radius:22px;box-shadow:0 12px 35px #0000000d;border:1px solid #eef2ff}
-    .box h3{color:#2563eb;margin-bottom:12px}
-    .box p{color:#4b5563;line-height:1.6}
-    .about{background:white}
-    .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .stat{background:#f0f6ff;padding:25px;border-radius:20px;text-align:center}
-    .stat h3{font-size:34px;color:#7c3aed}
-    .projects .box{padding:0;overflow:hidden}
-    .project-img{height:130px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-size:30px;font-weight:800}
-    .project-content{padding:24px}
-    .contact{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;text-align:center}
-    .contact p{margin:15px 0 25px;color:#e0e7ff}
-    .contact .btn{background:white;color:#2563eb}
-    footer{text-align:center;padding:22px;background:#111827;color:white}
-    @media(max-width:768px){
-      header{flex-direction:column;gap:15px}
-      nav{display:flex;flex-wrap:wrap;justify-content:center}
-      .hero,.about-wrap{grid-template-columns:1fr}
-      h1{font-size:38px}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#1f2937;
+      line-height:1.6;
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#0f172a,#1d4ed8,#6d28d9);
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero h1{
+      font-size:46px;
+      margin-bottom:15px;
+    }
+
+    .hero h2{
+      font-size:22px;
+      margin-bottom:15px;
+      color:#dbeafe;
+    }
+
+    .hero p{
+      max-width:750px;
+      margin:0 auto 25px;
+      font-size:18px;
+      color:#e0f2fe;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 24px;
+      background:white;
+      color:#1d4ed8;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      margin:8px;
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+    }
+
+    .container{
+      max-width:1150px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    .section{
+      background:white;
+      padding:30px;
+      margin-bottom:30px;
+      border-radius:22px;
+      box-shadow:0 15px 35px rgba(0,0,0,.10);
+    }
+
+    h2{
+      color:#1d4ed8;
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:22px;
+      margin-top:20px;
+    }
+
+    .box{
+      background:#f8fafc;
+      padding:24px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,.10);
+      border:1px solid #e5e7eb;
+      transition:.3s;
+    }
+
+    .box:hover{
+      transform:translateY(-8px);
+      box-shadow:0 18px 35px rgba(37,99,235,.25);
+    }
+
+    .box h3{
+      color:#2563eb;
+      margin-bottom:10px;
+      font-size:20px;
+    }
+
+    .skill{
+      text-align:center;
+      font-weight:bold;
+      color:#111827;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    @media(max-width:600px){
+      .hero h1{
+        font-size:34px;
+      }
+
+      .hero h2{
+        font-size:18px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">Chandra Prakash Sharma</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a href="#contact" class="btn">Hire Me</a>
-</header>
+  <section class="hero">
+    <h1>Chandra Prakash Sharma</h1>
+    <h2>SEO | GEO | AEO | AI Search Optimization</h2>
 
-<section class="hero" id="home">
-  <div>
-    <span class="tag">SEO • GEO • AIO Specialist</span>
-    <h1>Hi, I’m <span>Chandra Prakash Sharma</span></h1>
     <p>
-      I am a Digital Marketing and SEO professional with 2 years of experience.
-      I help websites grow through SEO, GEO, AIO, technical SEO, content strategy,
-      keyword research and AI search optimization.
+      Helping businesses improve organic visibility, search rankings, and lead generation through modern SEO strategies.
     </p>
-    <div class="buttons">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="#contact" class="outline">Contact Me</a>
-    </div>
-  </div>
 
-  <div class="dashboard">
-    <div class="card">
-      <h3>SEO Growth</h3>
-      <p>Keyword ranking, organic traffic and Google visibility improvement.</p>
-    </div>
-    <div class="card">
-      <h3>GEO & AIO</h3>
-      <p>AI search, Google AI Overview and answer-based content optimization.</p>
-    </div>
-    <div class="card">
-      <h3>Website Audit</h3>
-      <p>Technical SEO, indexing, speed, Core Web Vitals and content audit.</p>
-    </div>
-  </div>
-</section>
+    <a class="btn" href="https://www.linkedin.com/in/chandra-prakash-seo" target="_blank">LinkedIn Profile</a>
+    <a class="btn" href="mailto:chandrapraksh061@gmail.com">Contact Me</a>
+  </section>
 
-<section class="about" id="about">
-  <div class="about-wrap">
-    <div>
-      <div class="title" style="text-align:left">
-        <h2>About Me</h2>
-        <p>SEO professional focused on ranking, visibility and business growth.</p>
-      </div>
-      <p style="line-height:1.8;color:#4b5563">
-        I have worked on different types of websites including education,
-        real estate, hotel, clinic, service business, sports infrastructure and
-        freelance client websites. My main focus is SEO, GEO, AIO, content
-        optimization, technical SEO and search intent-based strategy.
+  <div class="container">
+
+    <section class="section">
+      <h2>About Me</h2>
+
+      <p>
+        I am an SEO Professional focused on Technical SEO, On-Page SEO, Content Optimization,
+        GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), and AI Search Visibility.
+        I help businesses improve organic rankings, search visibility, and sustainable growth through effective SEO strategies.
       </p>
-    </div>
 
-    <div class="stats">
-      <div class="stat"><h3>2+</h3><p>Years Experience</p></div>
-      <div class="stat"><h3>50+</h3><p>Pages Optimized</p></div>
-      <div class="stat"><h3>10+</h3><p>Industries Worked</p></div>
-      <div class="stat"><h3>100%</h3><p>Growth Focused</p></div>
-    </div>
-  </div>
-</section>
+      <br>
 
-<section id="skills">
-  <div class="title">
-    <h2>My Core Skills</h2>
-    <p>Skills I use to improve website ranking and visibility.</p>
-  </div>
-  <div class="grid">
-    <div class="box"><h3>SEO Optimization</h3><p>On-page SEO, off-page SEO, technical SEO and local SEO.</p></div>
-    <div class="box"><h3>GEO & AIO</h3><p>AI search visibility, Google AI Overview and answer engine optimization.</p></div>
-    <div class="box"><h3>Keyword Research</h3><p>Business intent keywords, competitor research and content planning.</p></div>
-    <div class="box"><h3>Technical SEO</h3><p>Indexing issues, sitemap, robots.txt, canonical, speed and Core Web Vitals.</p></div>
-    <div class="box"><h3>Content Strategy</h3><p>SEO blogs, service pages, city pages, product pages and internal linking.</p></div>
-    <div class="box"><h3>SEO Tools</h3><p>GSC, GA4, Ahrefs, SEMrush, Screaming Frog, WordPress and Rank Math.</p></div>
-  </div>
-</section>
+      <p>
+        I have worked with Sports Infrastructure, Education, Real Estate, Hospitality, Healthcare,
+        and Service-Based websites, helping brands build a stronger online presence through organic growth.
+      </p>
+    </section>
 
-<section id="services">
-  <div class="title">
-    <h2>My Services</h2>
-    <p>What I can do for your business website.</p>
-  </div>
-  <div class="grid">
-    <div class="box"><h3>SEO Audit</h3><p>Complete website SEO audit with improvement points.</p></div>
-    <div class="box"><h3>On-page SEO</h3><p>Meta tags, headings, content, images and internal linking.</p></div>
-    <div class="box"><h3>Technical SEO</h3><p>Fix technical errors, speed issues and indexing problems.</p></div>
-    <div class="box"><h3>Local SEO</h3><p>Improve local visibility for business and service-based websites.</p></div>
-    <div class="box"><h3>GEO / AIO SEO</h3><p>Optimize content for AI search and answer-based results.</p></div>
-    <div class="box"><h3>Backlink Strategy</h3><p>Quality off-page SEO strategy for better authority.</p></div>
-  </div>
-</section>
+    <section class="section">
+      <h2>Core SEO Skills</h2>
 
-<section class="projects" id="projects">
-  <div class="title">
-    <h2>Projects & Website Experience</h2>
-    <p>Different industries where I have worked.</p>
-  </div>
-  <div class="grid">
-    <div class="box"><div class="project-img">SEO</div><div class="project-content"><h3>Sports Infra Website</h3><p>SEO blogs, service pages, keyword research and technical SEO.</p></div></div>
-    <div class="box"><div class="project-img">EDU</div><div class="project-content"><h3>Education Website</h3><p>Course page SEO, blog optimization and lead-focused content.</p></div></div>
-    <div class="box"><div class="project-img">REAL</div><div class="project-content"><h3>Real Estate Website</h3><p>Location-based SEO, property pages and local keyword targeting.</p></div></div>
-    <div class="box"><div class="project-img">HOTEL</div><div class="project-content"><h3>Hotel Website</h3><p>Local SEO, service pages and Google visibility improvement.</p></div></div>
-    <div class="box"><div class="project-img">CLINIC</div><div class="project-content"><h3>Clinic Website</h3><p>Service page SEO, appointment-focused content and local ranking.</p></div></div>
-    <div class="box"><div class="project-img">FREE</div><div class="project-content"><h3>Freelance Websites</h3><p>SEO setup, content optimization and technical fixes.</p></div></div>
-  </div>
-</section>
+      <div class="grid">
+        <div class="box skill">Technical SEO</div>
+        <div class="box skill">On-Page SEO</div>
+        <div class="box skill">Off-Page SEO</div>
+        <div class="box skill">Keyword Research</div>
+        <div class="box skill">Content Optimization</div>
+        <div class="box skill">Local SEO</div>
+        <div class="box skill">GEO</div>
+        <div class="box skill">AEO</div>
+        <div class="box skill">AI Search Optimization</div>
+        <div class="box skill">Google Search Console</div>
+        <div class="box skill">Google Analytics 4</div>
+        <div class="box skill">WordPress SEO</div>
+      </div>
+    </section>
 
-<section class="contact" id="contact">
-  <h2>Let’s Work Together</h2>
-  <p>Want to improve your website ranking, traffic and AI search visibility?</p>
-  <a href="mailto:yourmail@gmail.com" class="btn">Email Me</a>
-</section>
+    <section class="section">
+      <h2>Industries I Have Worked With</h2>
 
-<footer>
-  <p>© 2026 Chandra Prakash Sharma | SEO, GEO & AIO Portfolio</p>
-</footer>
+      <div class="grid">
+
+        <div class="box">
+          <h3>Sports & Infrastructure</h3>
+          <p>
+            SEO-optimized service pages, blog content, keyword research, technical SEO audits,
+            and local search visibility improvements.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Education & EdTech</h3>
+          <p>
+            Course page SEO, content strategy, organic traffic growth,
+            and lead-generation focused optimization.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Real Estate</h3>
+          <p>
+            Location-based SEO, property page optimization, local keyword targeting,
+            and lead-focused content strategies.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Hospitality</h3>
+          <p>
+            Hotel SEO, local search optimization, Google visibility improvement,
+            and service page optimization.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Healthcare & Clinics</h3>
+          <p>
+            Clinic SEO, local ranking improvements, appointment-focused content,
+            and healthcare service page optimization.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Business Websites</h3>
+          <p>
+            Technical SEO, content optimization, website audits, keyword strategy,
+            and organic growth solutions for service-based businesses.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>SEO Tools I Use</h2>
+
+      <div class="grid">
+        <div class="box skill">Google Search Console</div>
+        <div class="box skill">Google Analytics 4</div>
+        <div class="box skill">Ahrefs</div>
+        <div class="box skill">SEMrush</div>
+        <div class="box skill">Screaming Frog</div>
+        <div class="box skill">Rank Math</div>
+        <div class="box skill">WordPress</div>
+        <div class="box skill">PageSpeed Insights</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+
+      <p><b>Email:</b> chandrapraksh061@gmail.com</p>
+      <p><b>LinkedIn:</b> linkedin.com/in/chandra-prakash-seo</p>
+      <p><b>Website:</b> chandraprakashseo.github.io</p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Chandra Prakash Sharma | SEO Portfolio
+  </footer>
 
 </body>
 </html>
